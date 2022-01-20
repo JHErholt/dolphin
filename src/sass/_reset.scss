@@ -3,7 +3,7 @@ html{scroll-behavior: smooth !important;}
 html, body{min-height: 100vh;text-rendering: optimizeSpeed;}
 
 h1, h2, h3, h4 ,h5 ,h6{
-    font-family: 'Chango', cursive;
+    font-family: $font-title;
 }
 
 li{list-style: none;}
