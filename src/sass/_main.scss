@@ -52,6 +52,7 @@ main{
     .intro-container{
       @extend .container;
       background-color: rgb(16, 94, 146);
+      color: white;
     }
     .content-container{
       @extend .container;
