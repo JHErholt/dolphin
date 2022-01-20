@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <div class="noScroll">
-        {% include "header.njk" %}
-        <main>
-            {{ content | safe }}
-        </main>
-        {% include "footer.njk" %}
-    </div>
+    {% include "header.njk" %}
+    <main>
+        {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
 </body>
 <script src="../../js/script.js"></script>
 </html>
