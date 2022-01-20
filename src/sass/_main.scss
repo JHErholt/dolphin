@@ -1,0 +1,66 @@
+main{
+  .container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+  }
+    .header-container{
+      @extend .container;
+      background-color: #a4e4e7;
+      z-index: 1;
+      .hero-text{
+        display: flex;
+        flex-direction: column;
+        height: 85%;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        h1{
+          color: rgb(16, 94, 146);
+          font-size: 3em;
+          padding-bottom: 5px;
+        }
+        h2{
+          font-size: 1.6em;
+          padding-top: 5px;
+        }
+      }
+      .scroll-cloud{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 3;
+        animation: cloud 1.5s linear infinite;
+        text-align: center;
+        .arrow {
+          position: relative;
+          border: solid rgb(16, 94, 146);
+          border-width: 0 10px 10px 0;
+          display: inline-block;
+          padding: 10px;
+          margin: 0 auto;
+          z-index: 1;
+        }
+        .down {
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        }
+      }
+    }
+    .intro-container{
+      @extend .container;
+      background-color: rgb(16, 94, 146);
+    }
+    .content-container{
+      @extend .container;
+      background-color: white;
+    }
+}
+
+@keyframes cloud{
+  0% {padding-top: 0px;}
+  50% {padding-top: 10px;}
+  100%{padding-top: 0px;}
+}
