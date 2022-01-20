@@ -1,4 +1,9 @@
-.test{
+// Making the site bareable on phone
+.noOverflow{
     position:relative;
     overflow: hidden;
+}
+
+.lorem{
+    font-family: $font-lorem !important;
 }
