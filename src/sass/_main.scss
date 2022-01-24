@@ -6,7 +6,7 @@ main{
     left: 0;
     z-index: 3;
   }
-    .header-container{
+    #header--background{
       @extend .container;
       background-color: #a4e4e7;
       z-index: 1;
@@ -69,7 +69,7 @@ main{
 // Tablet
 @media only screen and (min-width: 768px){
   main{
-    .header-container{
+    #header--background{
       .hero-text{
         height: 85%;
       }
