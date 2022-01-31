@@ -2,14 +2,17 @@ fetch('https://api.sunrise-sunset.org/json?lat=55.824730&lng=-12.073690&formatte
 .then(res => res.json())
 .then(data => {
     // Date to see what time it is now
-    let time = new Date();
+    let time = new Date().toLocaleTimeString('da-DK', {hour: "2-digit", minute: "2-digit"});
     // Get time of sunrise/sunset (API always do UTC, so need rewrite)
     let sunriseUTC = data.results.sunrise;
     let sunsetUTC = data.results.sunset;
     // Rewrite result to CET
-    let sunriseCET = new Date(sunriseUTC).toLocaleTimeString('da-DK', {hour: "2-digit"});
-    let sunsetCET = new Date(sunsetUTC).toLocaleTimeString('da-DK', {hour: "2-digit"});
-    if(time.getHours() > sunriseCET && time.getHours() < sunsetCET){
+    let sunriseCET = new Date(sunriseUTC).toLocaleTimeString('da-DK', {hour: "2-digit", minute: "2-digit"});
+    let sunsetCET = new Date(sunsetUTC).toLocaleTimeString('da-DK', {hour: "2-digit", minute: "2-digit"});
+    console.log(time)
+    console.log(sunriseCET)
+    console.log(sunsetCET)
+    if(time > (sunriseCET - 1) && time < (sunsetCET - 1)){
     }else{
         toggleTheme()
     }
