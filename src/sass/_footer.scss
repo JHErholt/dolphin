@@ -60,7 +60,7 @@ footer {
 
 // Dolphin
 .dolphin{
-  background: url(../../assets/dolphin-front.svg);
+  background: url(../../assets/drawn-by-amly/dolphin-front.svg);
   position: absolute;
   width: 150px;
   height: 150px;
@@ -70,12 +70,12 @@ footer {
   transform: translateX(-50%);
   animation: dolphin-jump 3s linear infinite;
   &:nth-of-type(3) {
-    background: url(../../assets/dolphin-back.svg);
+    background: url(../../assets/drawn-by-amly/dolphin-back.svg);
     left: 56%;
     animation: dolphin-jump 3.3s linear infinite;
   }
   &:nth-of-type(4) {
-    background: url(../../assets/dolphin-middle.svg);
+    background: url(../../assets/drawn-by-amly/dolphin-middle.svg);
     left: 45%;
     animation: dolphin-jump 3.2s linear infinite;
   }

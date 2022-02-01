@@ -22,3 +22,12 @@
 .sky-light{
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%) !important;
 }
+
+// Offset
+.offset-xx-large{padding: $offset-xx-large;}
+.offset-x-large{padding: $offset-x-large;}
+.offset-large{padding: $offset-large;}
+.offset-medium{padding: $offset-medium;}
+.offset-small{padding: $offset-small;}
+.offset-x-small{padding: $offset-x-small;}
+.offset-xx-small{padding: $offset-xx-small;}
