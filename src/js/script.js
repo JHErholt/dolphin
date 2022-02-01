@@ -19,10 +19,16 @@ fetch('https://api.sunrise-sunset.org/json?lat=55.824730&lng=-12.073690&formatte
 })
 function toggleTheme() {
     // Find elements
+    // Header
     let headerBackground = document.querySelector('#header--background')
-    let footerBackground = document.querySelector('#footer--background');
     let clouds = document.querySelector('#clouds');
     let birds = document.querySelector('#birds');
+
+    // Main
+
+    // Footer
+    let footerBackground = document.querySelector('#footer--background');
+
     let wave1 = document.querySelector('#wave1');
     let wave2 = document.querySelector('#wave2');
     let headerStars = document.querySelector('#header__star-container');
