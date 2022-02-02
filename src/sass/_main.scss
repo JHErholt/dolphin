@@ -59,12 +59,27 @@ main{
 }
 .img-container{
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
 }
 .dolphin-drawing{
-  height: 500px;
-  width: auto;
+  height: auto;
+  width: 45vw;
 }
+
+.text-container{
+  width: 50%;
+  margin: 0 0 0 auto;
+  h1{
+      @extend .center-text;
+      padding-bottom: $offset-xx-small;
+  }
+  h2{
+      @extend .center-text;
+      padding: $offset-xx-small 0 $offset-medium 0;
+  }
+}
+
+
 
 
 @keyframes cloud{

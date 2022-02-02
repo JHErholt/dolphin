@@ -4,9 +4,12 @@
     overflow: hidden;
 }
 
+// Fonts
 .lorem{
     font-family: $font-lorem !important;
 }
+
+
 
 .hide{
     display: none !important;
@@ -31,3 +34,9 @@
 .offset-small{padding: $offset-small;}
 .offset-x-small{padding: $offset-x-small;}
 .offset-xx-small{padding: $offset-xx-small;}
+
+
+.center-text{
+    text-align: center;
+}
+
