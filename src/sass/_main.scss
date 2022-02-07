@@ -68,14 +68,21 @@ main{
 
 .text-container{
   width: 50%;
-  margin: 0 0 0 auto;
   h1{
-      @extend .center-text;
-      padding-bottom: $offset-xx-small;
+    @extend .center-text;
+    padding-bottom: $offset-xx-small;
+    font-size: 2.4em
   }
   h2{
-      @extend .center-text;
-      padding: $offset-xx-small 0 $offset-medium 0;
+    @extend .center-text;
+    padding: $offset-xx-small 0 $offset-medium 0;
+    font-size: 1.8em;
+    }
+  p{
+    font-size: 1.4em;
+  }
+  &--right{
+    margin: 0 0 0 auto;
   }
 }
 
